@@ -643,6 +643,11 @@ body {
   fill: var(--basic-background-color);
 }
 
+.footer-subscribe {
+  margin-left: 93px;
+  display: flex;
+}
+
 /* Portfolio */
 
 .portfolio {
