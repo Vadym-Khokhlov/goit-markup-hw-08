@@ -495,6 +495,77 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+        <form>
+          <div class="modal-field">
+            <label class="modal-label">Имя</label>
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              placeholder=""
+              required
+              minlength="2"
+            />
+          </div>
+        </form>
+        <form>
+          <div class="modal-field">
+            <label class="modal-label">Телефон</label>
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              placeholder=""
+              required
+              minlength="2"
+            />
+          </div>
+        </form>
+        <form>
+          <div class="modal-field">
+            <label class="modal-label">Почта</label>
+            <input
+              type="email"
+              class="modal-input"
+              name="user-email"
+              placeholder=""
+              required
+              minlength="2"
+            />
+          </div>
+        </form>
+        <form>
+          <div class="modal-field">
+            <label for="user-text" class="modal-label">Комментарий</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-text"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+        </form>
+        <div class="modal-field">
+          <input
+            type="checkbox"
+            name="privacy"
+            value="true"
+            class="modal-check visually-hidden"
+            id="privacy"
+          />
+          <label for="privacy" class="check-text">
+            <!-- <span>
+              <svg class="check-icon" width="11" height="8">
+                <use href="./img/symbol-defs.svg#icon-check"></use>
+              </svg>
+            </span> -->
+            Cоглашаюсь с рассылкой и принимаю
+            <span><a href>Условия договора</a></span></label
+          >
+          <button type="submit">Отправить</button>
+        </div>
       </div>
     </div>
 
