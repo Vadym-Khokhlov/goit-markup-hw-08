@@ -953,6 +953,7 @@ body {
   color: var(--secondary-text-color);
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
