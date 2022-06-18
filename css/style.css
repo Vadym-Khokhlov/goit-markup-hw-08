@@ -946,6 +946,10 @@ body {
   outline: var(--accent-color);
 }
 
+.modal-text:focus {
+  border-color: var(--accent-color);
+}
+
 .check-text {
   font-weight: 400;
   font-size: 14px;
