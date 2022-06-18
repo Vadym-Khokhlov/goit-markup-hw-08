@@ -707,10 +707,6 @@ body {
   fill: #ffffff;
 }
 
-/* .subscribe-label:focus {
-  ??
-} */
-
 /* Portfolio */
 
 .portfolio {
@@ -844,6 +840,7 @@ body {
   min-height: 581px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  border-radius: 4px;
 }
 
 .is-hidden {
@@ -936,6 +933,7 @@ body {
   color: var(--secondary-text-color);
   margin-bottom: 4px;
   display: block;
+  line-height: 100%;
 }
 
 .modal-text {
@@ -945,6 +943,7 @@ body {
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
+  outline: var(--accent-color);
 }
 
 .check-text {
@@ -971,17 +970,16 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87em;
-  height: 50px;
-  width: 200px;
+  padding: 10px 55px;
   color: var(--basic-background-color);
   margin-top: 30px;
-  margin-bottom: 40px;
   align-items: center;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   display: flex;
   justify-content: center;
+  border: none;
 }
 
 .button-send:hover,
@@ -999,9 +997,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: absolute;
-  left: 3px;
-  top: 3px; */
 }
 
 .check-icon {
