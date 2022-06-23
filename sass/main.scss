@@ -2,15 +2,15 @@
 
 @import "./base/general";
 
-@import "./components/logo";
-@import "./components/header";
-@import "./components/footer";
-@import "./components/backdrop";
-@import "./components/modal";
-
-@import "./hero";
-@import "./features";
-@import "./activity";
-@import "./team";
-@import "./clients";
-@import "./portfolio";
+@import "./layouts/logo";
+@import "./layouts/header";
+@import "./layouts/socials";
+@import "./layouts/footer";
+@import "./layouts/backdrop";
+@import "./layouts/modal";
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/activity";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/portfolio";

@@ -1,0 +1,72 @@
+.socials {
+  margin-left: 70px;
+}
+
+.socials__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--basic-background-color);
+  margin-bottom: 20px;
+}
+
+.socials__list {
+  display: flex;
+  justify-content: center;
+}
+.socials__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__link--dark {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.socials__link--light {
+  background: var(--basic-background-color);
+}
+
+.socials__link--dark:hover,
+.socials__link--dark:focus {
+  background-color: var(--accent-color);
+}
+
+.socials__link--dark:hover .socials__icon--dark,
+.socials__link--dark:focus .socials__icon--dark {
+  fill: var(--basic-background-color);
+}
+
+.socials__icon--light {
+  fill: var(--basic-background-color);
+}
+
+.socials__icon--dark {
+  display: flex;
+  fill: #afb1b8;
+}
