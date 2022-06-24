@@ -1,4 +1,8 @@
 .socials {
+  color: var(--basic-background-color);
+}
+
+.socials-position {
   margin-left: 70px;
 }
 
@@ -62,11 +66,14 @@
   fill: var(--basic-background-color);
 }
 
+.socials__icon {
+  display: flex;
+}
+
 .socials__icon--light {
   fill: var(--basic-background-color);
 }
 
 .socials__icon--dark {
-  display: flex;
   fill: #afb1b8;
 }

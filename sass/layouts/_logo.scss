@@ -3,7 +3,6 @@
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  color: var(--accent-color);
 }
 
 .header__logo {
@@ -13,7 +12,7 @@
   color: var(--accent-color);
 }
 
-.logo__studio--dark {
+.logo--dark {
   color: var(--black-color);
 }
 
@@ -21,6 +20,6 @@
   color: var(--accent-color);
 }
 
-.logo__studio--light {
+.logo--light {
   color: var(--basic-background-color);
 }

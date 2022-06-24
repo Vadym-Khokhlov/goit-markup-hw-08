@@ -11,7 +11,7 @@
   border-radius: 4px;
 }
 
-.modal-close__button {
+.modal__close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -54,7 +54,7 @@
   margin-bottom: 10px;
 }
 
-.modal-input__wrap {
+.modal__input-wrap {
   position: relative;
 }
 
@@ -105,7 +105,7 @@
   }
 }
 
-.modal-check__text {
+.modal__check-text {
   font-weight: 400;
   font-size: 14px;
   color: var(--secondary-text-color);
@@ -115,16 +115,16 @@
   position: relative;
 }
 
-.modal-conditions__text {
+.modal__conditions-text {
   color: var(--accent-color);
 }
 
-.button-send__wrap {
+.modal__button-send {
   display: flex;
   justify-content: center;
 }
 
-.button__send {
+.modal__send {
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -147,7 +147,7 @@
   }
 }
 
-.modal-check__text span {
+.modal__check-text span {
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
@@ -158,15 +158,15 @@
   justify-content: center;
 }
 
-.modal-check__icon {
+.modal__check-icon {
   fill: transparent;
 }
 
-.modal__check:checked + .modal-check__text span {
+.modal__check:checked + .modal__check-text span {
   background-color: var(--accent-color);
   border: none;
 }
 
-.modal__check:checked + .modal-check__text .modal-check__icon {
+.modal__check:checked + .modal__check-text .modal__check-icon {
   fill: var(--basic-background-color);
 }

@@ -85,7 +85,6 @@ body {
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  color: var(--accent-color);
 }
 
 .header__logo {
@@ -95,7 +94,7 @@ body {
   color: var(--accent-color);
 }
 
-.logo__studio--dark {
+.logo--dark {
   color: var(--black-color);
 }
 
@@ -103,7 +102,7 @@ body {
   color: var(--accent-color);
 }
 
-.logo__studio--light {
+.logo--light {
   color: var(--basic-background-color);
 }
 
@@ -183,6 +182,12 @@ body {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .contact__list {
   display: flex;
   align-items: center;
@@ -232,6 +237,10 @@ body {
 }
 
 .socials {
+  color: var(--basic-background-color);
+}
+
+.socials-position {
   margin-left: 70px;
 }
 
@@ -292,12 +301,15 @@ body {
   fill: var(--basic-background-color);
 }
 
+.socials__icon {
+  display: flex;
+}
+
 .socials__icon--light {
   fill: var(--basic-background-color);
 }
 
 .socials__icon--dark {
-  display: flex;
   fill: #afb1b8;
 }
 
@@ -325,7 +337,7 @@ body {
   align-items: baseline;
 }
 
-.address {
+.address-text {
   font-family: Roboto;
   color: var(--basic-background-color);
   font-size: 14px;
@@ -444,7 +456,7 @@ body {
   border-radius: 4px;
 }
 
-.modal-close__button {
+.modal__close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -461,7 +473,7 @@ body {
   right: 10px;
   padding: 0;
 }
-.modal-close__button:hover, .modal-close__button:focus {
+.modal__close-button:hover, .modal__close-button:focus {
   background-color: var(--basic-background-color);
   fill: var(--accent-color);
 }
@@ -483,7 +495,7 @@ body {
   margin-bottom: 10px;
 }
 
-.modal-input__wrap {
+.modal__input-wrap {
   position: relative;
 }
 
@@ -531,7 +543,7 @@ body {
   border-color: var(--accent-color);
 }
 
-.modal-check__text {
+.modal__check-text {
   font-weight: 400;
   font-size: 14px;
   color: var(--secondary-text-color);
@@ -541,16 +553,16 @@ body {
   position: relative;
 }
 
-.modal-conditions__text {
+.modal__conditions-text {
   color: var(--accent-color);
 }
 
-.button-send__wrap {
+.modal__button-send {
   display: flex;
   justify-content: center;
 }
 
-.button__send {
+.modal__send {
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -566,12 +578,12 @@ body {
   justify-content: center;
   border: none;
 }
-.button__send:hover, .button__send:focus {
+.modal__send:hover, .modal__send:focus {
   background-color: var(--hero-hover-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check__text span {
+.modal__check-text span {
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
@@ -582,16 +594,16 @@ body {
   justify-content: center;
 }
 
-.modal-check__icon {
+.modal__check-icon {
   fill: transparent;
 }
 
-.modal__check:checked + .modal-check__text span {
+.modal__check:checked + .modal__check-text span {
   background-color: var(--accent-color);
   border: none;
 }
 
-.modal__check:checked + .modal-check__text .modal-check__icon {
+.modal__check:checked + .modal__check-text .modal__check-icon {
   fill: var(--basic-background-color);
 }
 
