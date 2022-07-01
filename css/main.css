@@ -44,12 +44,27 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -128,6 +143,7 @@ body {
 
 .nav__list {
   display: flex;
+  display: none;
 }
 
 .nav__item {
@@ -186,6 +202,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: auto;
+  display: none;
 }
 
 .contact__list {
@@ -950,4 +967,10 @@ body {
 
 .portfolio__item:hover .portfolio__overlay-text {
   transform: translateY(-100%);
+}
+
+.mobile-menu-button {
+  border: none;
+  background-color: white;
+  padding: 10px 15px;
 }/*# sourceMappingURL=main.css.map */
