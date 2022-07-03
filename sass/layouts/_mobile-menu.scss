@@ -1,5 +1,40 @@
-.mobile-menu-button {
+.header__mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__button {
   border: none;
   background-color: white;
-  padding: 10px 15px;
+  display: inline-flex;
+  margin-right: 0;
+  @media screen and (min-width: 481px) {
+    display: none;
+  }
+}
+
+.menu__button .icon__close {
+  display: none;
+}
+
+.menu__button.is__open .icon__close {
+  display: block;
+}
+
+.menu__button.is__open .icon__menu {
+  display: none;
+}
+
+.mobile__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 20px;
+  display: none;
+  &.is__open {
+    display: block;
+  }
 }

@@ -23,17 +23,33 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo">
-          <a href="./index.html" class="header__logo link"
-            >Web<span class="logo logo--dark">Studio</span></a
+        <div class="header__mobile">
+          <div class="logo">
+            <a href="./index.html" class="header__logo link"
+              >Web<span class="logo logo--dark">Studio</span></a
+            >
+          </div>
+          <button
+            class="menu__button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile__menu"
+            data-menu-button
           >
-        </div>
-        <div class="mobile-menu" mobile-menu>
-          <button class="menu-open-button" type="button">
-            <svg class="mobile-menu__icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            <svg width="40" height="40" aria-label="Mobile menu switcher">
+              <use
+                class="icon__menu"
+                href="./images/symbol-defs.svg#icon-menu"
+              ></use>
+              <use
+                class="icon__close"
+                href="./images/symbol-defs.svg#icon-close"
+              ></use>
             </svg>
           </button>
+          <div class="mobile__menu" id="mobile__menu" data-menu>
+            content menu
+          </div>
           <nav class="nav list">
             <ul class="nav__list list">
               <li class="nav__item current">
@@ -66,11 +82,6 @@
               </li>
             </ul>
           </div>
-          <button class="menu-close-button" type="button">
-            <svg class="modal__close-icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-close"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </header>
@@ -172,6 +183,7 @@
           </ul>
         </div>
       </section>
+
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
@@ -683,5 +695,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,5 +1,8 @@
 .activity {
   padding-top: 0;
+  @media screen and (min-width: 320) {
+    display: none;
+  }
 }
 
 .activity__title {
