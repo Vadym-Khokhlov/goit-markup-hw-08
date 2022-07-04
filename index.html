@@ -22,66 +22,96 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__mobile">
-          <div class="logo">
-            <a href="./index.html" class="header__logo link"
-              >Web<span class="logo logo--dark">Studio</span></a
-            >
-          </div>
-          <button
-            class="menu__button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile__menu"
-            data-menu-button
+      <div class="container header__mobile">
+        <div class="logo">
+          <a href="./index.html" class="header__logo link"
+            >Web<span class="logo logo--dark">Studio</span></a
           >
-            <svg width="40" height="40" aria-label="Mobile menu switcher">
-              <use
-                class="icon__menu"
-                href="./images/symbol-defs.svg#icon-menu"
-              ></use>
-              <use
-                class="icon__close"
-                href="./images/symbol-defs.svg#icon-close"
-              ></use>
-            </svg>
-          </button>
-          <div class="mobile__menu" id="mobile__menu" data-menu>
-            content menu
-          </div>
-          <nav class="nav list">
-            <ul class="nav__list list">
-              <li class="nav__item current">
-                <a href="#" class="current link">Студия</a>
-              </li>
-              <li class="nav__item">
-                <a href="portfolio.html" class="link">Портфолио</a>
-              </li>
-              <li class="nav__item"><a href="#" class="link">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="contact">
-            <ul class="contact__list list">
-              <li class="contact__item">
-                <a href="" class="contact__link link">
-                  <svg class="contact__icon" width="16" height="12">
-                    <use
-                      href="./images/symbol-defs.svg#icon-envelope"
-                    ></use></svg
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contact__item">
-                <a href="" class="contact__link link">
-                  <svg class="contact__icon" width="10" height="16">
-                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
+        </div>
+        <nav class="nav list">
+          <ul class="nav__list list">
+            <li class="nav__item current">
+              <a href="#" class="current link">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a href="portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="nav__item"><a href="#" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <ul class="contact__list list">
+            <li class="contact__item">
+              <a href="" class="contact__link link">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__item">
+              <a href="" class="contact__link link">
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          class="menu__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile__menu"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Mobile menu switcher">
+            <use
+              class="icon__menu"
+              href="./images/symbol-defs.svg#icon-menu"
+            ></use>
+            <use
+              class="icon__close"
+              href="./images/symbol-defs.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile__menu" id="mobile__menu" data-menu>
+        <div class="mob-menu__nav">
+          <ul class="mob-menu__nav-list list">
+            <li class="mob-menu__nav-item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="mob-menu__nav-item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="mob-menu__nav-item">
+              <a href="#" class="link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-menu__contact">
+          <ul class="mob-menu__contact-list list">
+            <li class="mob-menu__contact-item link">+38 096 111 11 11</li>
+            <li class="mob-menu__contact-item link">info@devstudio.com</li>
+          </ul>
+        </div>
+        <div class="mob-menu__socials">
+          <ul class="mob-menu__socials-list list">
+            <li class="mob-menu__socials-link">
+              <a href="" class="link">Instagram</a>
+            </li>
+            <li class="mob-menu__socials-link">
+              <a href="" class="link">Twitter</a>
+            </li>
+            <li class="mob-menu__socials-link">
+              <a href="" class="link">Facebook</a>
+            </li>
+            <li class="mob-menu__socials-link">
+              <a href="" class="link">Linkedin</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -525,7 +555,7 @@
             >
           </div>
           <div class="address">
-            <address class="address-text">
+            <address class="address__text">
               г. Киев, пр-т Леси Украинки, 26
             </address>
             <ul class="address__list list">
@@ -695,6 +725,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
