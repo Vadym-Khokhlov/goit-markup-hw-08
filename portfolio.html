@@ -23,18 +23,18 @@
   <body>
     <header class="header">
       <div class="container">
+        <div class="logo">
+          <a href="./index.html" class="header__logo link"
+            >Web<span class="logo logo--dark">Studio</span></a
+          >
+        </div>
         <nav class="nav list">
-          <div class="logo">
-            <a href="./index.html" class="header__logo link"
-              >Web<span class="logo logo--dark">Studio</span></a
-            >
-          </div>
           <ul class="nav__list list">
             <li class="nav__item">
               <a href="index.html" class="link">Студия</a>
             </li>
             <li class="nav__item current">
-              <a href="portfolio.html" class="current link">Портфолио</a>
+              <a href="portfolio.html" class="link current">Портфолио</a>
             </li>
             <li class="nav__item"><a href="#" class="link">Контакты</a></li>
           </ul>
@@ -58,6 +58,24 @@
             </li>
           </ul>
         </div>
+        <button
+          class="menu__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile__menu"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Mobile menu switcher">
+            <use
+              class="icon__menu"
+              href="./images/symbol-defs.svg#icon-menu"
+            ></use>
+            <use
+              class="icon__close"
+              href="./images/symbol-defs.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>

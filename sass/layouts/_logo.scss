@@ -4,8 +4,6 @@
   font-style: normal;
   font-weight: 700;
   width: 100%;
-  // display: flex;
-  // align-items: center;
 }
 
 .header__logo {
@@ -17,10 +15,10 @@
   justify-content: space-between;
   padding: 15px 16px;
   @media screen and (min-width: 768px) {
-    padding: 26px 88px 26px 15px;
+    margin: 26px 88px 26px 15px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 24px 93px 25px 93px;
+    margin: 24px 93px 25px 93px;
   }
 }
 

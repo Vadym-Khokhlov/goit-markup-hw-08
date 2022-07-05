@@ -8,20 +8,30 @@
   padding-top: 60px;
   padding-bottom: 60px;
   display: block;
-  // justify-content: center;
   height: 603px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    height: 463px;
+  }
+
+  // justify-content: center;
 }
 
 .footer__address {
   display: block;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-right: 177px;
+  }
 }
-
-// .footer .container {
-//   display: flex;
-//   align-items: baseline;
-// }
-
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 .address__text {
   font-family: Roboto;
   color: var(--basic-background-color);
@@ -55,8 +65,12 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  // margin-top: 60px;
+  // margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin: auto;
+    flex-direction: column;
+  }
 }
 
 .footer-follow__title {
@@ -71,11 +85,19 @@
 
 .footer-follow__wrap {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .footer-follow__label {
   margin-right: 12px;
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -89,7 +111,9 @@
   margin-bottom: 20px;
   padding: 15px 16px;
   width: 450px;
-
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
   &:focus {
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,7 +129,7 @@
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
-  // display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
