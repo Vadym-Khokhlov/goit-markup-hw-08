@@ -114,17 +114,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 16px;
-}
-@media screen and (min-width: 768px) {
-  .header__logo {
-    margin: 26px 88px 26px 15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__logo {
-    margin: 24px 93px 25px 93px;
-  }
+  padding: 15px 0;
 }
 
 .logo--dark {
@@ -148,11 +138,11 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .header {
     height: 80px;
+    justify-content: start;
   }
 }
 
@@ -160,7 +150,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
 
 .nav {
@@ -173,23 +162,28 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .nav {
-    margin-right: 84px;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-right: 93px;
   }
 }
 
 .nav__list {
   display: flex;
+  margin-right: 84px;
 }
 
 .nav__item {
   display: flex;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-right: 50px;
 }
 
-.nav__list .nav__item:not(last-child) {
+.nav__item:not(:last-child) {
   display: flex;
   margin-right: 50px;
 }
@@ -324,8 +318,6 @@ body {
 
 .socials {
   color: var(--basic-background-color);
-  margin-bottom: 60px;
-  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .socials {
@@ -433,10 +425,11 @@ body {
 .footer__address {
   display: block;
   text-align: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__address {
-    margin-right: 177px;
+    margin-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -451,7 +444,6 @@ body {
 @media screen and (min-width: 768px) {
   .footer .container {
     display: flex;
-    align-items: baseline;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -478,7 +470,7 @@ body {
 }
 
 .address__link {
-  color: var(--secondary-text-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 .address__link:hover, .address__link:focus {
   color: var(--accent-color);
@@ -491,11 +483,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer-follow {
     margin: auto;
     flex-direction: column;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -794,13 +788,42 @@ body {
 .hero {
   background-color: rgba(47, 48, 58, 0.4);
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  width: 100%;
-  height: 400px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  max-width: 1600px;
+  max-height: 400px;
+  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Hero_img_mobile_1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: center;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Hero_img_mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Hero_img_tablet_1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Hero_img_tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Hero_img_desktop_1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Hero_img_desktop@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -811,6 +834,13 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--basic-background-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero__button {
@@ -898,6 +928,11 @@ body {
   text-align: center;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .feature__subtitle {
+    text-align: left;
+  }
+}
 
 .feature__text {
   font-weight: 400;
@@ -905,6 +940,11 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 768) {
+  .feature__text {
+    text-align: left;
+  }
 }
 
 .activity {
@@ -967,6 +1007,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  width: 100%;
 }
 
 .team__title {
@@ -982,13 +1023,12 @@ body {
 .team__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
 }
 
 .team__item {
   background-color: var(--basic-background-color);
-  width: 100%;
-  border-radius: 4px;
+  max-width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -1005,10 +1045,10 @@ body {
 
 .team__img {
   padding-bottom: 30px;
+  max-width: 100%;
 }
 
 .teammate {
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 

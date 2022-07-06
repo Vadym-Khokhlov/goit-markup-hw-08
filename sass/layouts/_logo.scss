@@ -13,13 +13,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 16px;
-  @media screen and (min-width: 768px) {
-    margin: 26px 88px 26px 15px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin: 24px 93px 25px 93px;
-  }
+  padding: 15px 0;
+  // @media screen and (min-width: 768px) {
+  //   margin: 26px 88px 26px 15px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   margin: 24px 93px 25px 93px;
+  // }
 }
 
 .logo--dark {
