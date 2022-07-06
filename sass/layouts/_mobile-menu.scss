@@ -2,6 +2,9 @@
   border: none;
   background-color: white;
   margin-right: 0;
+  position: absolute;
+  right: 0;
+  z-index: 2;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -11,17 +14,21 @@
   display: none;
 }
 
+.icon__menu:hover,
+.icon__menu:focus {
+  fill: var(--accent-color);
+}
+
+.icon__close:hover,
+.icon__close:focus {
+  fill: var(--accent-color);
+}
+
 .menu__button.is__open .icon__close {
   position: absolute;
-  top: 8px;
-  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  z-index: 99;
 }
 
 .menu__button.is__open .icon__menu {
@@ -31,18 +38,100 @@
 .mobile__menu {
   background-color: var(--basic-background-color);
   text-align: center;
-  padding: 20px;
   font-size: 20px;
   display: none;
   &.is__open {
     display: block;
-  }
-
-  @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    top: 100%;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    position: fixed;
+    top: 0%;
     left: 0;
     width: 100%;
+    z-index: 1;
   }
+}
+
+.container-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mob-menu__nav {
+  text-align: left;
+}
+
+.mob-menu__nav-list {
+  margin-bottom: 40px;
+}
+
+.mob-menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__nav-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+}
+
+.mob-menu__nav-link:hover,
+mob-menu__nav-link:focus {
+  color: var(--accent-color);
+}
+
+.mob-menu__contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.mob-menu__contact-number {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+
+.mob-menu__contact-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.mob-menu__socials {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.mob-menu__socials-list {
+  display: flex;
+}
+
+.mob-menu__socials-item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-menu__socials-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
