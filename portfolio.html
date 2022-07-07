@@ -82,14 +82,14 @@
               <div class="mob-menu__nav">
                 <ul class="mob-menu__nav-list list">
                   <li class="mob-menu__nav-item current">
-                    <a
-                      href="./index.html"
-                      class="mob-menu__nav-link current link"
+                    <a href="./index.html" class="mob-menu__nav-link link"
                       >Студия</a
                     >
                   </li>
                   <li class="mob-menu__nav-item">
-                    <a href="./portfolio.html" class="mob-menu__nav-link link"
+                    <a
+                      href="./portfolio.html"
+                      class="mob-menu__nav-link current link"
                       >Портфолио</a
                     >
                   </li>
@@ -156,13 +156,37 @@
         <div class="container portfolio">
           <ul class="portfolio__list">
             <li class="portfolio__item list">
-              <a href="" class="link">
+              <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio2.jpg"
-                    alt="people photos on a laptop screen"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1_desktop_1x.jpg 1x,
+                        ./images/portfolio/portfolio1_desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1_tablet_1x.jpg 1x,
+                        ./images/portfolio/portfolio1_tablet@x2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1_mobile_1x.jpg 1x,
+                        ./images/portfolio/portfolio1_mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio1_mobile_1x.jpg"
+                      alt="people photos on a laptop screen"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="portfolio__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -178,11 +202,34 @@
             <li class="portfolio__item list">
               <a href="" class="link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio3.jpg"
-                    alt="New Orlean vs Golden state basketball"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2_desktop_1x.jpg 1x,
+                        ./images/portfolio/portfolio2_desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2_tablet_1x.jpg 1x,
+                        ./images/portfolio/portfolio2_tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2_mobile_1x.jpg 1x,
+                        ./images/portfolio/portfolio2_mobile@2x.jpg 2x
+                      "
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio2_mobile_1x.jpg"
+                      alt="New Orlean vs Golden State basketball"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -200,11 +247,34 @@
             <li class="portfolio__item list">
               <a href="" class="link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio4.jpg"
-                    alt="seafood restaurant logo"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3_desktop_1x.jpg 1x,
+                        ./images/portfolio/portfolio3_desktop_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3_tablet_1x.jpg 1x,
+                        ./images/portfolio/portfolio3_tablet_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3_mobile_1x.jpg 1x,
+                        ./images/portfolio/portfolio3_mobile_2x.jpg 2x
+                      "
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio3_mobile_1x.jpg"
+                      alt="Seafood restaurant logo"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -220,11 +290,34 @@
             <li class="portfolio__item list">
               <a href="" class="link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio1.jpg"
-                    alt="black earphones"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4_desktop_1x.jpg 1x,
+                        ./images/portfolio/portfolio4_desktop_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4_tablet_1x.jpg 1x,
+                        ./images/portfolio/portfolio4_tablet_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4_mobile_1x.jpg 1x,
+                        ./images/portfolio/portfolio4_mobile_2x.jpg 2x
+                      "
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio4_mobile_1x.jpg"
+                      alt="black earphones"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -240,11 +333,34 @@
             <li class="portfolio__item list">
               <a href="" class="link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio6.jpg"
-                    alt="two boxes white and brown"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5_desktop_1x.jpg 1x,
+                        ./images/portfolio/portfolio5_desktop_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5_tablet_1x.jpg 1x,
+                        ./images/portfolio/portfolio5_tablet_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5_mobile_1x.jpg 1x,
+                        ./images/portfolio/portfolio5_mobile_2x.jpg 2x
+                      "
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio5_mobile_1x.jpg"
+                      alt="two boxes white and brown"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -260,11 +376,34 @@
             <li class="portfolio__item list">
               <a href="" class="link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio7.jpg"
-                    alt="apple monitor with the map on screen"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6_desktop_1x.jpg 1x,
+                        ./images/portfolio/portfolio6_desktop_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6_tablet_1x.jpg 1x,
+                        ./images/portfolio/portfolio6_tablet_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6_mobile_1x.jpg 1x,
+                        ./images/portfolio/portfolio6_mobile_2x.jpg 2x
+                      "
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio6_mobile_1x.jpg"
+                      alt="apple monitor whith the map on screen"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -280,11 +419,34 @@
             <li class="portfolio__item list">
               <a href="" class="link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio8.jpg"
-                    alt="design magazine"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7_desktop_1x.jpg 1x,
+                        ./images/portfolio/portfolio7_desktop_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7_tablet_1x.jpg 1x,
+                        ./images/portfolio/portfolio7_tablet_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7_mobile_1x.jpg 1x,
+                        ./images/portfolio/portfolio7_mobile_2x.jpg 2x
+                      "
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio7_mobile_1x.jpg"
+                      alt="design magazine"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -300,7 +462,34 @@
             <li class="portfolio__item list">
               <a href="" class="link">
                 <div class="portfolio__thumb">
-                  <img src="./images/portfolio9.jpg" alt="label" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8_desktop_1x.jpg 1x,
+                        ./images/portfolio/portfolio8_desktop_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8_tablet_1x.jpg 1x,
+                        ./images/portfolio/portfolio8_tablet_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8_mobile_1x.jpg 1x,
+                        ./images/portfolio/portfolio8_mobile_2x.jpg 2x
+                      "
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio8_mobile_1x.jpg"
+                      alt="label"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -316,11 +505,34 @@
             <li class="portfolio__item list">
               <a href="" class="link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/portfolio5.jpg"
-                    alt="hands on a laptop"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9_desktop_1x.jpg 1x,
+                        ./images/portfolio/portfolio9_desktop_2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9_tablet_1x.jpg 1x,
+                        ./images/portfolio/portfolio9_tablet_2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9_mobile_1x.jpg 1x,
+                        ./images/portfolio/portfolio9_mobile_2x.jpg 2x
+                      "
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio9_mobile_1x.jpg"
+                      alt="hands on a laptop"
+                      height="294"
+                    />
+                  </picture>
                   <p class="portfolio__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
