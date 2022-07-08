@@ -25,6 +25,9 @@
   text-transform: uppercase;
   color: var(--basic-background-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .socials__list {

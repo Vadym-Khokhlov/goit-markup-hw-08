@@ -359,6 +359,11 @@ body {
   color: var(--basic-background-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .socials__title {
+    text-align: left;
+  }
+}
 
 .socials__list {
   display: flex;
