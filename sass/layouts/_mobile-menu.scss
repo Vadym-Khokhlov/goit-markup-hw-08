@@ -4,10 +4,14 @@
   margin-right: 0;
   position: absolute;
   right: 0;
-  z-index: 2;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.menu__button.is__open {
+  z-index: 2;
 }
 
 .menu__button .icon__close {
@@ -50,6 +54,9 @@
     left: 0;
     width: 100%;
     z-index: 1;
+    @media screen and(min-width:768px) {
+      display: none;
+    }
   }
 }
 

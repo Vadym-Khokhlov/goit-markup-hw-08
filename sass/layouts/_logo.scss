@@ -3,7 +3,11 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  width: 100%;
+  @media screen and (min-width: 1200px) {
+    // margin-right: 93px;
+    // display: flex;
+    font-size: 26px;
+  }
 }
 
 .header__logo {
@@ -12,7 +16,6 @@
   color: var(--accent-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 15px 0;
   // @media screen and (min-width: 768px) {
   //   margin: 26px 88px 26px 15px;
@@ -28,6 +31,9 @@
 
 .footer__logo {
   color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo--light {

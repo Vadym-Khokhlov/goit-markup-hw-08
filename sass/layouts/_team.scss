@@ -7,6 +7,7 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   width: 100%;
+  height: auto;
 }
 
 .team__title {
@@ -27,7 +28,7 @@
 
 .team__item {
   background-color: var(--basic-background-color);
-  max-width: 100%;
+  width: 100%;
   height: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -40,13 +41,8 @@
   }
 }
 
-.team__img {
-  padding-bottom: 30px;
-  max-width: 100%;
-  height: auto;
-}
-
 .teammate {
+  padding-top: 30px;
   padding-bottom: 30px;
   height: auto;
 }
@@ -69,4 +65,10 @@
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 16px;
+}
+
+.teammate__photo {
+  display: block;
+  height: auto;
+  width: 100%;
 }

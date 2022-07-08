@@ -1,4 +1,5 @@
 .hero {
+  width: 100%;
   background-color: rgba(47, 48, 58, 0.4);
   text-align: center;
   max-width: 1600px;
@@ -12,6 +13,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  margin-left: auto;
+  margin-right: auto;
   @include retina {
     background-image: linear-gradient(to right, #2f303a66, #2f303a66),
       url(../images/background/Hero_img_mobile@2x.jpg);
@@ -61,9 +64,9 @@
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   margin-top: 30px;
-  min-width: 200px;
-  min-height: 50px;
+  padding: 10px 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

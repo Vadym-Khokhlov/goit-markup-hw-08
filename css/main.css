@@ -113,7 +113,11 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 
 .header__logo {
@@ -122,7 +126,6 @@ body {
   color: var(--accent-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 15px 0;
 }
 
@@ -132,6 +135,9 @@ body {
 
 .footer__logo {
   color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo--light {
@@ -151,7 +157,6 @@ body {
 @media screen and (min-width: 768px) {
   .header {
     height: 80px;
-    justify-content: start;
   }
 }
 
@@ -176,12 +181,6 @@ body {
     margin-left: 88px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .nav {
-    margin-right: 93px;
-  }
-}
-
 .nav__list {
   display: flex;
   margin-right: 84px;
@@ -243,7 +242,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
   width: 100%;
 }
 @media screen and (max-width: 767px) {
@@ -280,6 +278,10 @@ body {
   .contact__item {
     margin-bottom: 0;
     width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -336,6 +338,16 @@ body {
 
 .socials-position {
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .socials-position {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .socials-position {
+    margin-left: 70px;
+  }
 }
 
 .socials__title {
@@ -428,6 +440,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer {
     height: 252px;
+    text-align: left;
   }
 }
 
@@ -436,14 +449,9 @@ body {
   text-align: center;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .footer__address {
-    margin-right: 165px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__address {
-    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -454,6 +462,7 @@ body {
   .footer .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -794,6 +803,7 @@ body {
 }
 
 .hero {
+  width: 100%;
   background-color: rgba(47, 48, 58, 0.4);
   text-align: center;
   max-width: 1600px;
@@ -806,6 +816,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -861,9 +873,9 @@ body {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   margin-top: 30px;
-  min-width: 200px;
-  min-height: 50px;
+  padding: 10px 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__button:hover, .hero__button:focus {
@@ -1016,6 +1028,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   width: 100%;
+  height: auto;
 }
 
 .team__title {
@@ -1036,7 +1049,7 @@ body {
 
 .team__item {
   background-color: var(--basic-background-color);
-  max-width: 100%;
+  width: 100%;
   height: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1052,13 +1065,8 @@ body {
   }
 }
 
-.team__img {
-  padding-bottom: 30px;
-  max-width: 100%;
-  height: auto;
-}
-
 .teammate {
+  padding-top: 30px;
   padding-bottom: 30px;
   height: auto;
 }
@@ -1081,6 +1089,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-bottom: 16px;
+}
+
+.teammate__photo {
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 .clients__title {
@@ -1257,12 +1271,15 @@ body {
   margin-right: 0;
   position: absolute;
   right: 0;
-  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .menu__button {
     display: none;
   }
+}
+
+.menu__button.is__open {
+  z-index: 2;
 }
 
 .menu__button .icon__close {
@@ -1306,6 +1323,11 @@ body {
   left: 0;
   width: 100%;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .mobile__menu.is__open {
+    display: none;
+  }
 }
 
 .container-mobile {
